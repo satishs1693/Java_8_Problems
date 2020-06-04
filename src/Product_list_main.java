@@ -16,6 +16,6 @@ public class Product_list_main {
 				.reduce(String::concat)
 				.orElse("Satish");
 		System.out.println(longeststring);
-		
+
 		}
 }

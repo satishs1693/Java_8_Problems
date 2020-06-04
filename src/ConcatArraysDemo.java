@@ -1,6 +1,6 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class ConcatArraysDemo {
@@ -20,5 +20,11 @@ public class ConcatArraysDemo {
 	    for(Object s : bk12) {
 	    	System.out.println(((Book) s).getName());
 	    }  
+	    List<Integer> together = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4)) // Stream of List<Integer>
+	            .flatMap(List::stream)
+	            .map(integer -> integer+1)
+	            .collect(Collectors.toList());
+	    System.out.println("********************"+together.toString());
+	    
 	}
 }

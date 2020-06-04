@@ -9,15 +9,9 @@ public class ConcatStreams {
 		Stream<String> s1 = Stream.of("100", "satish" ,"Ragesh");
 		Stream<String> s2 = Stream.of("101","sat" ,"Rgesh", "Ragesh");
 		String a[]=Stream.concat(s1, s2).distinct().toArray( s -> new String[s]);
-		
 		for( String data : a) {
-			
 			System.out.println( data);
-			
 		}
-		
-		
-		
 	}
 
 }

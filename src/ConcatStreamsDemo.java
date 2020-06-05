@@ -7,7 +7,6 @@ public class ConcatStreamsDemo {
         Stream<String> s2 = Stream.of("AA", "BB", "DD");
         Stream<String> s = Stream.concat(s1, s2);
         s.forEach(e->System.out.print(e+" "));
-
         //Remove duplicates using distinct()
         s1 = Stream.of("AA", "BB", "CC");
         s2 = Stream.of("AA", "BB", "DD");

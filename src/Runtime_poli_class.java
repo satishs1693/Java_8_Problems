@@ -7,7 +7,6 @@ class SBI implements Bank{
 	public void Branches() {
 		System.out.println("SBI having Many Branches");	
 	}
-	
 }
 class Employee12 {
 	public void interest() {

@@ -17,7 +17,7 @@ public class ConcatArraysDemo {
 	    }
 	    Book bk[]=Stream.concat(Stream.of(bk1), Stream.of(bk2)).toArray(b->new Book[b]);
 	    Object bk12[]=Stream.concat(Arrays.stream(bk1),Stream.of(bk2)).toArray();
-	    for(Object s : bk12) {
+	    		for(Object s : bk12) {
 	    	System.out.println(((Book) s).getName());
 	    }  
 	    List<Integer> together = Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4)) // Stream of List<Integer>

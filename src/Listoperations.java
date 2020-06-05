@@ -6,7 +6,6 @@ import org.w3c.dom.ls.LSInput;
 public class Listoperations {
 	public static void main(String[] args) {
 		List<String> col = new ArrayList<String>();
-		
 		col.add("sat");
 		System.out.println(col);
 		col.add(1,"satish");
@@ -30,7 +29,27 @@ public class Listoperations {
 		List<List<String>> ls  = new ArrayList<List<String>>(Arrays.asList(col,list2));
 		System.out.println(ls);
 		System.out.println("************************************");
-		ls.stream().flatMap(list->list.stream()).collect(Collectors.toList()).forEach(element->System.out.println(element));	
+		ls.stream().flatMap(list->list.stream()).collect(Collectors.toList()).forEach(element->System.out.println(element));
+		System.out.println("####################################");
+		Collection col1 = new ArrayList<>();
+		col1.add("java");
+		col1.add("jsp");
+		col1.add("JNI");
+		List col2 = new ArrayList<>(col1);
+		System.out.println(col2);
+		Iterator it = col2.iterator();
+		while (it.hasNext()) {
+			System.out.println("***************");
+			Object object = (Object) it.next();
+			if (object.equals("JNI")) {
+				 int i =col2.indexOf("JNI");
+				 System.out.println(i);
+				//.out.println(col.remove(col.indexOf("JNI")));
+				 System.out.println("%%%%%%%%%%%%");
+				System.out.println(col2.set(i, "J2EE"));
+			} 
+		}
+
 	}
 }
 	

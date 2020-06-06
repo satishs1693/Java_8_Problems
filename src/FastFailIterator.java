@@ -6,7 +6,6 @@ public class FastFailIterator {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
 		Map<String,String > cityCaptials = new HashMap<String,String>();
 		cityCaptials.put("India","Delhi");
 		cityCaptials.put("USA","Washington");

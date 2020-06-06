@@ -7,7 +7,7 @@ public class GetClass {
 		Object ob = new Object();
 		showDetails(ob);
 	}
-	public static void showDetails( Object ob) {
+public static void showDetails( Object ob) {
 		Class cls = ob.getClass();
 		Class pt=cls.getSuperclass();
 		if( null != pt) {

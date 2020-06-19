@@ -16,7 +16,9 @@ public class ValidateNumber {
 		int a=n1.indexOf(" ");
 		int b=n1.lastIndexOf(' ');
 		String FirstWord =n1.substring(0,a);
+		System.out.println(FirstWord);
 		String Secondindex= n1.substring(b+1);
+		System.out.println(Secondindex);
 			return FirstWord.equals(Secondindex)?FirstWord.length():FirstWord.length()+Secondindex.length();
 	}
 

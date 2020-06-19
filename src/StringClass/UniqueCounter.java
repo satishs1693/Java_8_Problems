@@ -12,24 +12,24 @@ public class UniqueCounter {
 		System.out.println(ans);
 		in.close();
 	}
-//	private static int uniqueCounter(String str, String str1) {
-//		int count = 0;
-//		str=str.replaceAll("\\s+","");
-//		System.out.println(str);
-//		str1=str1.replaceAll("\\s+","");
-//		for (int i = 0; i < str.length(); i++) {
-//			for (int j = 0; j <str1.length(); j++) {
-//				if (str.charAt(i) == str1.charAt(j)) {
-//					System.out.println(str.charAt(i) +"........."+str.indexOf(str.charAt(i), i+1));
-//					if ((str.indexOf(str.charAt(i), i+1) < i)  &&  str.indexOf(str.charAt(i)) >= i) {
-//						System.out.println(str.charAt(i));
-//						count++;
-//					}
-//				}
-//			}
-//		}
-//		return count;
-//	}
+	private static int uniqueCounter1(String str, String str1) {
+		int count = 0;
+		str=str.replaceAll("\\s+","");
+		System.out.println(str);
+		str1=str1.replaceAll("\\s+","");
+		for (int i = 0; i < str.length(); i++) {
+			for (int j = 0; j <str1.length(); j++) {
+				if (str.charAt(i) == str1.charAt(j)) {
+					System.out.println(str.charAt(i) +"........."+str.indexOf(str.charAt(i), i+1));
+					if ((str.indexOf(str.charAt(i), i+1) < i)  &&  str.indexOf(str.charAt(i)) >= i) {
+						System.out.println(str.charAt(i));
+						count++;
+					}
+				}
+			}
+		}
+		return count;
+	}
 private static int uniqueCounter(String str, String str1) {
 		str=str.replaceAll("\\s+","");
 		System.out.println(str);

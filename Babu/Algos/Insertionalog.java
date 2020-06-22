@@ -19,6 +19,5 @@ public class Insertionalog {
 	}// printing the vlues
 	System.out.println(Arrays.toString(A));
 	}
-	
 }
 

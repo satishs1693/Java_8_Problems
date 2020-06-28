@@ -43,7 +43,6 @@ public class Find_the_Number_Occurring_Odd_Number_of_Times {
 		  if(hp.get(a)% 2 !=0 ) {
 			  return a;
 		  }
-		  
 	  }
 	  	return -1;
 	}

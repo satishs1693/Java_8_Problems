@@ -8,7 +8,6 @@ public class FindMax_Deff_Bw {
 		int max_diff = a[1] -a[0];
 		for ( int i= 0 ; i < a.length ; i++) {
 			for( int j = i+1 ; j < a.length ; j++) {
-				
 				// why we are writing the expression in below statement is most power full
 				if( a[j]-a[i] >= max_diff) {
 					max_diff = a[j]-a[i];

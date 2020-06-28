@@ -32,7 +32,7 @@ public static void main(String[] args) {
 		CustomerID cid= new CustomerID(234, 0);
 		System.out.println(cid.hashCode());
 		mp.put(cid, "SatishTokala");
-		System.out.println(mp.get(new CustomerID(234, 0)));
+		System.out.println(mp.get(cid));
 	}
 }
 class CustomerID{
@@ -44,12 +44,6 @@ class CustomerID{
 		this.nameSpace = nameSpace;
 	}
 	@Override
-	public boolean equals(Object obj) {
-		if(!(obj instanceof CustomerID)) return false;
-		if(obj==this) return true;
-		CustomerID obj1=(CustomerID)obj;
-		return this.crmID==obj1.crmID && this.nameSpace==obj1.nameSpace;
-	}
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
@@ -57,4 +51,5 @@ class CustomerID{
 		result = prime * result + nameSpace;
 		return result;
 	}
+	
 }
